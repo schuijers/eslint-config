@@ -1,0 +1,5 @@
+{
+  "peerDependencies": {
+    "vue": "^3.2.31"
+  }
+}
