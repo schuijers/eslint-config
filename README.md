@@ -1,6 +1,6 @@
 # @schuijers/eslint-config [![GitHub Build Status][shield-github-build-status]][shield-github-build-status] [![npm][shield-npm]][npm] [![MIT License][shield-license]][license]
 
-My shareable ESLint config.
+My shareable ESLint configs.
 
 ## Installation
 
@@ -35,15 +35,15 @@ Or, you can use it in other ways as described in the
 
 ### Other configs
 
-Besides the base config (for JavaScript and TypeScript) this package also exposes a few other configs:
+Besides the base config (for JavaScript and TypeScript) this package also exposes some additional configs:
 
-| Config name | Description                                                                                                                              |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `cypress`   | ESLint config for projects that use [Cypress](https://www.cypress.io/)                                                                   |
-| `jest`      | ESLint config for projects that use [Jest](https://jestjs.io/) (with or without the [Testing Library](https://testing-library.com/))     |
-| `nuxt`      | ESLint config for projects that use [Nuxt](https://nuxtjs.org/) (this config extends the `vue` config)                                   |
-| `promise`   | ESLint config for projects that use [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) |
-| `vue`       | ESLint config for projects that use [Vue](https://vuejs.org/)                                                                            |
+| Config name | Description                                                                                                                                 |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `cypress`   | Additional rules for projects that use [Cypress](https://www.cypress.io/)                                                                   |
+| `jest`      | Additional rules for projects that use [Jest](https://jestjs.io/) (with or without the [Testing Library](https://testing-library.com/))     |
+| `promise`   | Additional rules for projects that use [promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) |
+| `vue`       | Additional rules for projects that use [Vue](https://vuejs.org/)                                                                            |
+| `nuxt`      | Additional rules for projects that use [Nuxt](https://nuxtjs.org/) (this config extends the `vue` config above)                             |
 
 You can use them standalone:
 
