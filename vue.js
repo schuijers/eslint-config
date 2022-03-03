@@ -4,6 +4,7 @@ const semver = require('semver')
 
 let vueVersion = 3
 
+// determine the Vue version
 try {
   const pkgFile = findup('package.json')
 
@@ -25,6 +26,15 @@ try {
       vueVersion = (semver.coerce(allDeps.vue) || new semver.SemVer('3.0.0')).major
     }
   }
+} catch (error) {
+  // ignore error
+}
+
+// determine whether the TypeScript ESLint parser is installed
+let hasTypeScriptParser = false
+
+try {
+  hasTypeScriptParser = !!require.resolve('@typescript-eslint/parser')
 } catch (error) {
   // ignore error
 }
@@ -1158,6 +1168,7 @@ module.exports = {
       parser: 'vue-eslint-parser',
       parserOptions: {
         ecmaVersion: 2020,
+        parser: hasTypeScriptParser ? '@typescript-eslint/parser' : undefined,
         sourceType: 'module',
       },
     },
