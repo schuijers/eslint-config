@@ -1,5 +1,13 @@
 # @schuijers/eslint-config
 
+## 0.3.0
+
+### Minor Changes
+
+- [#7](https://github.com/schuijers/eslint-config/pull/7)
+  [`02fb30d`](https://github.com/schuijers/eslint-config/commit/02fb30d54418137f55df4debb08b16b3d89aa21d) Thanks
+  [@schuijers](https://github.com/schuijers)! - Add eslint-import-resolver-alias as dependency
+
 ## 0.2.0
 
 ### Minor Changes
