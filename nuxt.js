@@ -1,5 +1,8 @@
 module.exports = {
   extends: ['./vue.js'],
+  env: {
+    node: true,
+  },
   plugins: ['nuxt'],
   rules: {
     /**
