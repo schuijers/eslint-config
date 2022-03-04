@@ -1,5 +1,13 @@
 # @schuijers/eslint-config
 
+## 0.4.0
+
+### Minor Changes
+
+- [#9](https://github.com/schuijers/eslint-config/pull/9)
+  [`45720fa`](https://github.com/schuijers/eslint-config/commit/45720faa552b769c1ccc5498f12ea10c18590c6d) Thanks
+  [@schuijers](https://github.com/schuijers)! - vue: remove rules conflicting with Prettier
+
 ## 0.3.0
 
 ### Minor Changes
