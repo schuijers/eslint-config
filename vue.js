@@ -142,18 +142,6 @@ module.exports = {
     'vue/html-button-has-type': 'off',
 
     /**
-     * Require or disallow a line break before tag's closing brackets.
-     * https://eslint.vuejs.org/rules/html-closing-bracket-newline.html
-     */
-    'vue/html-closing-bracket-newline': 'warn',
-
-    /**
-     * Require or disallow a space before tag's closing brackets.
-     * https://eslint.vuejs.org/rules/html-closing-bracket-spacing.html
-     */
-    'vue/html-closing-bracket-spacing': 'warn',
-
-    /**
      * Enforce unified line brake in HTML comments.
      * https://eslint.vuejs.org/rules/html-comment-content-newline.html
      */
@@ -170,24 +158,6 @@ module.exports = {
      * https://eslint.vuejs.org/rules/html-comment-indent.html
      */
     'vue/html-comment-indent': 'off',
-
-    /**
-     * Enforce end tag style.
-     * https://eslint.vuejs.org/rules/html-end-tags.html
-     */
-    'vue/html-end-tags': 'warn',
-
-    /**
-     * Enforce consistent indentation in `<template>`.
-     * https://eslint.vuejs.org/rules/html-indent.html
-     */
-    'vue/html-indent': 'warn',
-
-    /**
-     * Enforce quotes style of HTML attributes.
-     * https://eslint.vuejs.org/rules/html-quotes.html
-     */
-    'vue/html-quotes': 'warn',
 
     /**
      * Enforce self-closing style.
@@ -208,33 +178,10 @@ module.exports = {
     'vue/match-component-file-name': 'off',
 
     /**
-     * Enforce the maximum number of attributes per line.
-     * https://eslint.vuejs.org/rules/max-attributes-per-line.html
-     */
-    'vue/max-attributes-per-line': [
-      'warn',
-      {
-        singleline: 5,
-      },
-    ],
-
-    /**
      * Require component names to be always multi-word.
      * https://eslint.vuejs.org/rules/multi-word-component-names.html
      */
     'vue/multi-word-component-names': 'error',
-
-    /**
-     * Require a line break before and after the contents of a multiline element.
-     * https://eslint.vuejs.org/rules/multiline-html-element-content-newline.html
-     */
-    'vue/multiline-html-element-content-newline': 'warn',
-
-    /**
-     * Enforce unified spacing in mustache interpolations.
-     * https://eslint.vuejs.org/rules/mustache-interpolation-spacing.html
-     */
-    'vue/mustache-interpolation-spacing': 'warn',
 
     /**
      * Enforce new lines between multi-line properties in Vue components.
@@ -488,12 +435,6 @@ module.exports = {
     'vue/no-loss-of-precision': 'error',
 
     /**
-     * Disallow multiple spaces.
-     * https://eslint.vuejs.org/rules/no-multi-spaces.html
-     */
-    'vue/no-multi-spaces': 'warn',
-
-    /**
      * Disallow to pass multiple objects into array to class.
      * https://eslint.vuejs.org/rules/no-multiple-objects-in-class.html
      */
@@ -635,12 +576,6 @@ module.exports = {
      * https://eslint.vuejs.org/rules/no-side-effects-in-computed-properties.html
      */
     'vue/no-side-effects-in-computed-properties': 'error',
-
-    /**
-     * Disallow spaces around equal signs in attribute.
-     * https://eslint.vuejs.org/rules/no-spaces-around-equal-signs-in-attribute.html
-     */
-    'vue/no-spaces-around-equal-signs-in-attribute': 'warn',
 
     /**
      * Disallow sparse arrays in `<template>`.
@@ -969,12 +904,6 @@ module.exports = {
      * https://eslint.vuejs.org/rules/script-setup-uses-vars.html
      */
     'vue/script-setup-uses-vars': 'error',
-
-    /**
-     * Require a line break before and after the contents of a singleline element.
-     * https://eslint.vuejs.org/rules/singleline-html-element-content-newline.html
-     */
-    'vue/singleline-html-element-content-newline': 'warn',
 
     /**
      * Enforce sort-keys in a manner that is compatible with order-in-components.
