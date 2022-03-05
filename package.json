@@ -56,7 +56,7 @@
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.3",
     "@changesets/cli": "^2.21.0",
-    "@schuijers/prettier-config": "^1.0.1",
+    "@schuijers/prettier-config": "^1.1.0",
     "eslint": "^8.10.0",
     "eslint-find-rules": "^4.1.0",
     "jest": "^27.5.1",

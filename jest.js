@@ -45,7 +45,11 @@ module.exports = {
   env: {
     'jest/globals': true,
   },
-  plugins: ['jest', hasJestDom ? 'jest-dom' : null, hasTestingLibrary ? 'testing-library' : null].filter(Boolean),
+  plugins: [
+    'jest',
+    hasJestDom ? 'jest-dom' : null,
+    hasTestingLibrary ? 'testing-library' : null,
+  ].filter(Boolean),
   rules: {},
   overrides: [
     {
