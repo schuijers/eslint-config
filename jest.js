@@ -463,6 +463,12 @@ module.exports = {
               'testing-library/no-dom-import': framework ? ['error', framework] : 'off',
 
               /**
+               * Disallow the use of the global RegExp flag (/g) in queries.
+               * https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/no-global-regexp-flag-in-query.md
+               */
+              'testing-library/no-global-regexp-flag-in-query': 'error',
+
+              /**
                * Disallow the use of `cleanup`.
                * https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/no-manual-cleanup.md
                */
