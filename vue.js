@@ -17,8 +17,8 @@ try {
       ...pkg.dependencies,
     }
 
-    const hasNuxt = allDeps.includes('nuxt')
-    const hasNuxt3 = allDeps.includes('nuxt3')
+    const hasNuxt = !!allDeps.nuxt
+    const hasNuxt3 = !!allDeps.nuxt3
 
     if (hasNuxt || hasNuxt3) {
       vueVersion = hasNuxt3 ? 3 : 2
@@ -118,6 +118,17 @@ module.exports = {
     'vue/custom-event-name-casing': 'off',
 
     /**
+     * Enforce order of `defineEmits` and `defineProps` compiler macros.
+     * https://eslint.vuejs.org/rules/define-macros-order.html
+     */
+    'vue/define-macros-order': [
+      'error',
+      {
+        order: ['defineProps', 'defineEmits'],
+      },
+    ],
+
+    /**
      * Enforce dot notation whenever possible in `<template>`.
      * https://eslint.vuejs.org/rules/dot-notation.html
      */
@@ -176,6 +187,12 @@ module.exports = {
      * https://eslint.vuejs.org/rules/match-component-file-name.html
      */
     'vue/match-component-file-name': 'off',
+
+    /**
+     * Require the registered component name to match the imported component name.
+     * https://eslint.vuejs.org/rules/match-component-import-name.html
+     */
+    'vue/match-component-import-name': 'off',
 
     /**
      * Require component names to be always multi-word.
@@ -536,6 +553,12 @@ module.exports = {
     'vue/no-restricted-custom-event': 'off',
 
     /**
+     * Disallow specific HTML elements.
+     * https://eslint.vuejs.org/rules/no-restricted-html-elements.html
+     */
+    'vue/no-restricted-html-elements': 'off',
+
+    /**
      * Disallow specific props.
      * https://eslint.vuejs.org/rules/no-restricted-props.html
      */
@@ -780,6 +803,12 @@ module.exports = {
     'vue/prefer-import-from-vue': 'error',
 
     /**
+     * Enforce `Boolean` comes first in component prop types.
+     * https://eslint.vuejs.org/rules/prefer-prop-type-boolean-first.html
+     */
+    'vue/prefer-prop-type-boolean-first': 'error',
+
+    /**
      * Require static class names in template to be in a separate `class` attribute.
      * https://eslint.vuejs.org/rules/prefer-separate-static-class.html
      */
@@ -966,6 +995,12 @@ module.exports = {
     'vue/v-slot-style': 'warn',
 
     /**
+     * Require valid attribute names.
+     * https://eslint.vuejs.org/rules/valid-attribute-name.html
+     */
+    'vue/valid-attribute-name': 'error',
+
+    /**
      * Enforce valid `defineEmits` compiler macro.
      * https://eslint.vuejs.org/rules/valid-define-emits.html
      */
@@ -976,6 +1011,12 @@ module.exports = {
      * https://eslint.vuejs.org/rules/valid-define-props.html
      */
     'vue/valid-define-props': vueVersion === 3 ? 'error' : 'off',
+
+    /**
+     * Require valid keys in model option.
+     * https://eslint.vuejs.org/rules/valid-model-definition.html
+     */
+    'vue/valid-model-definition': 'error',
 
     /**
      * Enforce valid `nextTick` function calls.
