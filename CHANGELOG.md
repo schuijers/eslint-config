@@ -1,5 +1,14 @@
 # @schuijers/eslint-config
 
+## 0.6.0
+
+### Minor Changes
+
+- [#14](https://github.com/schuijers/eslint-config/pull/14)
+  [`3ed02a4`](https://github.com/schuijers/eslint-config/commit/3ed02a4a73c904dc4378fa7c1e392acf07fe19c5)
+  Thanks [@schuijers](https://github.com/schuijers)! - Updated dependencies, added new rules to
+  `jest` and `vue` configs
+
 ## 0.5.0
 
 ### Minor Changes
