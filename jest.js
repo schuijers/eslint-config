@@ -68,6 +68,12 @@ module.exports = {
         'jest/expect-expect': 'warn',
 
         /**
+         * Enforces a maximum number assertion calls in a test body.
+         * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/max-expects.md
+         */
+        'jest/max-expects': 'warn',
+
+        /**
          * Enforces a maximum depth to nested describe calls.
          * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/max-nested-describe.md
          */
@@ -235,6 +241,12 @@ module.exports = {
         'jest/prefer-expect-resolves': 'off',
 
         /**
+         * Prefer having hooks in a consistent order.
+         * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-hooks-in-order.md
+         */
+        'jest/prefer-hooks-in-order': 'error',
+
+        /**
          * Suggest having hooks before any test cases.
          * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-hooks-on-top.md
          */
@@ -245,6 +257,12 @@ module.exports = {
          * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-lowercase-title.md
          */
         'jest/prefer-lowercase-title': 'off',
+
+        /**
+         * Prefer mock resolved/rejected shorthands for promises.
+         * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-mock-promise-shorthand.md
+         */
+        'jest/prefer-mock-promise-shorthand': 'warn',
 
         /**
          * Prefer including a hint with external snapshots.
