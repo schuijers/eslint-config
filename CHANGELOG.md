@@ -1,5 +1,13 @@
 # @schuijers/eslint-config
 
+## 0.7.0
+
+### Minor Changes
+
+- [#17](https://github.com/schuijers/eslint-config/pull/17)
+  [`41df1bb`](https://github.com/schuijers/eslint-config/commit/41df1bbdb5de2c49056c0249d048cb0e73f17c6e)
+  Thanks [@schuijers](https://github.com/schuijers)! - Updated dependencies
+
 ## 0.6.0
 
 ### Minor Changes
