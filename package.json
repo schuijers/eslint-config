@@ -24,7 +24,7 @@
     "find-new-rules:vue": "cd test/vue && eslint-find-rules --unused .eslintrc.js",
     "format": "prettier --check \"**/*.{js,json}\"",
     "format:write": "yarn format --write",
-    "lint": "eslint --config index.js --ignore-path .gitignore .",
+    "lint": "eslint --ignore-path .gitignore .",
     "release": "changeset publish",
     "test": "npm-run-all find-new-rules"
   },
