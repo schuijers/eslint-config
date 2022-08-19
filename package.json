@@ -1,7 +1,7 @@
 {
   "name": "@schuijers/eslint-config",
   "version": "0.7.0",
-  "description": "ESLint rules according to schuijers' personal preference",
+  "description": "ESLint rules according to schuijers' personal preference.",
   "license": "MIT",
   "author": "Martijn Schuijers",
   "homepage": "https://github.com/schuijers/eslint-config#readme",
