@@ -29,6 +29,12 @@ module.exports = {
     'promise/no-callback-in-promise': 'warn',
 
     /**
+     * Disallow creating new promises with paths that resolve multiple times.
+     * https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/no-multiple-resolved.md
+     */
+    'promise/no-multiple-resolved': 'error',
+
+    /**
      * In an ES5 environment, make sure to create a `Promise` constructor before using.
      * https://github.com/xjamundx/eslint-plugin-promise/blob/development/docs/rules/no-native.md
      */

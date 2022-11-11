@@ -193,6 +193,11 @@ module.exports = {
     'line-comment-position': 'off',
 
     /**
+     * https://eslint.org/docs/rules/logical-assignment-operators
+     */
+    'logical-assignment-operators': 'error',
+
+    /**
      * Requires or disallows an empty line between class members.
      * https://eslint.org/docs/rules/lines-between-class-members
      */
@@ -457,6 +462,12 @@ module.exports = {
     'no-empty-pattern': 'error',
 
     /**
+     * Disallow empty static blocks.
+     * https://eslint.org/docs/rules/no-empty-static-block
+     */
+    'no-empty-static-block': 'error',
+
+    /**
      * Disallow `null` comparisons without type-checking operators.
      * https://eslint.org/docs/rules/no-eq-null
      */
@@ -659,6 +670,12 @@ module.exports = {
      * https://eslint.org/docs/rules/no-new-func
      */
     'no-new-func': 'error',
+
+    /**
+     * Disallow `new` operators with global non-constructor functions.
+     * https://eslint.org/docs/rules/no-new-native-nonconstructor
+     */
+    'no-new-native-nonconstructor': 'error',
 
     /**
      * Disallow `Object` constructors.

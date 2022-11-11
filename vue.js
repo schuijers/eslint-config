@@ -28,6 +28,7 @@ try {
   }
 } catch (error) {
   // ignore error
+  console.log(error)
 }
 
 // determine whether the TypeScript ESLint parser is installed
@@ -118,6 +119,18 @@ module.exports = {
     'vue/custom-event-name-casing': 'off',
 
     /**
+     * Enforce declaration style of `defineEmits`.
+     * https://eslint.vuejs.org/rules/define-emits-declaration.html
+     */
+    'vue/define-emits-declaration': 'error',
+
+    /**
+     * Enforce declaration style of `defineProps`.
+     * https://eslint.vuejs.org/rules/define-props-declaration.html
+     */
+    'vue/define-props-declaration': 'error',
+
+    /**
      * Enforce order of `defineEmits` and `defineProps` compiler macros.
      * https://eslint.vuejs.org/rules/define-macros-order.html
      */
@@ -174,7 +187,14 @@ module.exports = {
      * Enforce self-closing style.
      * https://eslint.vuejs.org/rules/html-self-closing.html
      */
-    'vue/html-self-closing': 'warn',
+    'vue/html-self-closing': [
+      'warn',
+      {
+        html: {
+          void: 'any',
+        },
+      },
+    ],
 
     /**
      * Prevent variables used in JSX to be marked as unused.
@@ -199,6 +219,12 @@ module.exports = {
      * https://eslint.vuejs.org/rules/multi-word-component-names.html
      */
     'vue/multi-word-component-names': 'error',
+
+    /**
+     * Enforce newlines between operands of ternary expressions in `<template>`.
+     * https://eslint.vuejs.org/rules/multiline-ternary.html
+     */
+    'vue/multiline-ternary': 'off',
 
     /**
      * Enforce new lines between multi-line properties in Vue components.
@@ -494,6 +520,18 @@ module.exports = {
     'vue/no-ref-as-operand': vueVersion === 3 ? 'error' : 'off',
 
     /**
+     * Disallow destructuring of ref objects that can lead to loss of reactivity.
+     * https://eslint.vuejs.org/rules/no-ref-object-destructure.html
+     */
+    'vue/no-ref-object-destructure': 'error',
+
+    /**
+     * Enforce props with default values to be optional.
+     * https://eslint.vuejs.org/rules/no-required-prop-with-default.html
+     */
+    'vue/no-required-prop-with-default': 'warn',
+
+    /**
      * Disallow the use of reserved names in component definitions.
      * https://eslint.vuejs.org/rules/no-reserved-component-names.html
      */
@@ -661,7 +699,7 @@ module.exports = {
     'vue/no-unsupported-features': [
       'error',
       {
-        version: vueVersion === 3 ? '^3.2.0' : '^2.6.0',
+        version: vueVersion === 3 ? '^3.2.0' : '^2.7.0',
       },
     ],
 
@@ -795,6 +833,12 @@ module.exports = {
      * https://eslint.vuejs.org/rules/padding-line-between-blocks.html
      */
     'vue/padding-line-between-blocks': 'error',
+
+    /**
+     * Require or disallow newlines between sibling tags in template.
+     * https://eslint.vuejs.org/rules/padding-line-between-tags.html
+     */
+    'vue/padding-line-between-tags': 'warn',
 
     /**
      * Enforce import from 'vue' instead of import from '@vue/*'.
@@ -981,6 +1025,12 @@ module.exports = {
      * https://eslint.vuejs.org/rules/v-on-function-call.html
      */
     'vue/v-on-function-call': 'warn',
+
+    /**
+     * Enforce writing style for handlers in `v-on` directives.
+     * https://eslint.vuejs.org/rules/v-on-handler-style.html
+     */
+    'vue/v-on-handler-style': 'error',
 
     /**
      * Enforce `v-on` directive style.
