@@ -1,5 +1,14 @@
 # @schuijers/eslint-config
 
+## 1.0.0
+
+### Major Changes
+
+- [#21](https://github.com/schuijers/eslint-config/pull/21)
+  [`6ca9c49`](https://github.com/schuijers/eslint-config/commit/6ca9c49fe1514583061076e57cbfb5e68fe452f0)
+  Thanks [@schuijers](https://github.com/schuijers)! - Added new rules to the `main`, `promise`,
+  `jest` and `vue` configs.
+
 ## 0.7.0
 
 ### Minor Changes
