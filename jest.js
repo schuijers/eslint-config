@@ -164,12 +164,6 @@ module.exports = {
         'jest/no-jasmine-globals': 'warn',
 
         /**
-         * Disallow importing Jest.
-         * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-jest-import.md
-         */
-        'jest/no-jest-import': 'error',
-
-        /**
          * Disallow large snapshots.
          * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-large-snapshots.md
          */
@@ -185,6 +179,12 @@ module.exports = {
          * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-mocks-import.md
          */
         'jest/no-mocks-import': 'error',
+
+        /**
+         * Disallow specific `jest.` methods.
+         * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-restricted-jest-methods.md
+         */
+        'jest/no-restricted-jest-methods': 'error',
 
         /**
          * Disallow specific matchers & modifiers.
@@ -221,6 +221,12 @@ module.exports = {
          * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-comparison-matcher.md
          */
         'jest/prefer-comparison-matcher': 'error',
+
+        /**
+         * Prefer using .each rather than manual loops.
+         * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-each.md
+         */
+        'jest/prefer-each': 'error',
 
         /**
          * Suggest using the built-in equality matchers.
