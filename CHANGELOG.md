@@ -1,5 +1,14 @@
 # @schuijers/eslint-config
 
+## 1.1.0
+
+### Minor Changes
+
+- [#23](https://github.com/schuijers/eslint-config/pull/23)
+  [`144dd67`](https://github.com/schuijers/eslint-config/commit/144dd67af0dbd08ab78afc466ffb68df5f0b8a82)
+  Thanks [@schuijers](https://github.com/schuijers)! - Updated dependencies, added new rule to `vue`
+  config
+
 ## 1.0.0
 
 ### Major Changes
