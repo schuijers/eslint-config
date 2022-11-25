@@ -919,6 +919,12 @@ module.exports = {
     'vue/require-name-property': 'error',
 
     /**
+     * require props to have a comment.
+     * https://eslint.vuejs.org/rules/require-prop-comment.html
+     */
+    'vue/require-prop-comment': 'off',
+
+    /**
      * Require prop type to be a constructor.
      * https://eslint.vuejs.org/rules/require-prop-type-constructor.html
      */
