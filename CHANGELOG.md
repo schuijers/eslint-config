@@ -1,5 +1,14 @@
 # @schuijers/eslint-config
 
+## 1.2.0
+
+### Minor Changes
+
+- [#25](https://github.com/schuijers/eslint-config/pull/25)
+  [`c0744af`](https://github.com/schuijers/eslint-config/commit/c0744afb09b079454754816133891d2540991b0d)
+  Thanks [@schuijers](https://github.com/schuijers)! - Add `eslint-import-resolver-typescript`
+  plugin to `import` config
+
 ## 1.1.0
 
 ### Minor Changes
