@@ -9,6 +9,11 @@ module.exports = {
   plugins: ['import'],
   settings: {
     'import/ignore': ['node_modules', '.json$', '.(scss|less|css|styl)$'],
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
   },
   rules: {
     /**
