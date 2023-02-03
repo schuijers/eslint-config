@@ -17,6 +17,12 @@ module.exports = {
   },
   rules: {
     /**
+     * Enforce or ban the use of inline type-only markers for named imports.
+     * https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/consistent-type-specifier-style.md
+     */
+    'import/consistent-type-specifier-style': 'off',
+
+    /**
      * Ensure a default export is present, given a default import.
      * https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/default.md
      */
@@ -135,6 +141,12 @@ module.exports = {
      * https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-dynamic-require.md
      */
     'import/no-dynamic-require': 'warn',
+
+    /**
+     * Forbid empty named import blocks.
+     * https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-empty-named-blocks.md
+     */
+    'import/no-empty-named-blocks': 'error',
 
     /**
      * Forbid the use of extraneous packages.

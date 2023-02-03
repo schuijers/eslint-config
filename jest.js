@@ -211,6 +211,12 @@ module.exports = {
         'jest/no-test-return-statement': 'warn',
 
         /**
+         * Disallow using `jest.mock()` factories without an explicit type parameter.
+         * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-untyped-mock-factory.md
+         */
+        'jest/no-untyped-mock-factory': 'off',
+
+        /**
          * Suggest using `toBeCalledWith()` or `toHaveBeenCalledWith()`.
          * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-called-with.md
          */
@@ -604,6 +610,12 @@ module.exports = {
          * Disable rules for which an extension rule exists.
          */
         '@typescript-eslint/unbound-method': 'off',
+
+        /**
+         * Disallow using `jest.mock()` factories without an explicit type parameter.
+         * https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-untyped-mock-factory.md
+         */
+        'jest/no-untyped-mock-factory': 'error',
 
         /**
          * Enforces unbound methods are called with their expected scope.

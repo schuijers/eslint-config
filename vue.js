@@ -48,6 +48,12 @@ module.exports = {
   plugins: ['vue'],
   rules: {
     /**
+     * Enforce line breaks after each array element in `<template>`.
+     * https://eslint.vuejs.org/rules/array-element-newline.html
+     */
+    'vue/array-element-newline': 'off',
+
+    /**
      * Enforce attribute naming style on custom components in template.
      * https://eslint.vuejs.org/rules/attribute-hyphenation.html
      */
@@ -839,6 +845,12 @@ module.exports = {
      * https://eslint.vuejs.org/rules/padding-line-between-tags.html
      */
     'vue/padding-line-between-tags': 'warn',
+
+    /**
+     * Require or disallow padding lines in component definition.
+     * https://eslint.vuejs.org/rules/padding-lines-in-component-definition.html
+     */
+    'vue/padding-lines-in-component-definition': 'off',
 
     /**
      * Enforce import from 'vue' instead of import from '@vue/*'.
