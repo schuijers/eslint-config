@@ -1,5 +1,34 @@
 # @schuijers/eslint-config
 
+## 1.3.0
+
+### Minor Changes
+
+- [#27](https://github.com/schuijers/eslint-config/pull/27)
+  [`9555db1`](https://github.com/schuijers/eslint-config/commit/9555db1a823b18bcbe6288697e7200f8198a62f9)
+  Thanks [@schuijers](https://github.com/schuijers)! - Added
+  `vue/padding-lines-in-component-definition` rule to `vue` config
+
+- [#27](https://github.com/schuijers/eslint-config/pull/27)
+  [`0246fb4`](https://github.com/schuijers/eslint-config/commit/0246fb44d7bcd870e0dbbccc9a0e942dceca0101)
+  Thanks [@schuijers](https://github.com/schuijers)! - Added
+  `import/consistent-type-specifier-style` to `import` config
+
+- [#27](https://github.com/schuijers/eslint-config/pull/27)
+  [`9555db1`](https://github.com/schuijers/eslint-config/commit/9555db1a823b18bcbe6288697e7200f8198a62f9)
+  Thanks [@schuijers](https://github.com/schuijers)! - Added `vue/array-element-newline` rule to
+  `vue` config
+
+- [#27](https://github.com/schuijers/eslint-config/pull/27)
+  [`07f94d7`](https://github.com/schuijers/eslint-config/commit/07f94d74e182c9b3e494bf191ad0861a547523d4)
+  Thanks [@schuijers](https://github.com/schuijers)! - Added `jest/no-untyped-mock-factory` rule to
+  `jest` config
+
+- [#27](https://github.com/schuijers/eslint-config/pull/27)
+  [`0246fb4`](https://github.com/schuijers/eslint-config/commit/0246fb44d7bcd870e0dbbccc9a0e942dceca0101)
+  Thanks [@schuijers](https://github.com/schuijers)! - Added `import/no-empty-named-blocks` rule to
+  `import` config
+
 ## 1.2.0
 
 ### Minor Changes
