@@ -5,13 +5,14 @@ My shareable ESLint configs.
 ## Installation
 
 ```shell script
+# npm
 npm install --save-dev @schuijers/eslint-config
-```
 
-or
-
-```shell script
+# yarn
 yarn add --dev @schuijers/eslint-config
+
+# pnpm
+pnpm add --save-dev @schuijers/eslint-config
 ```
 
 This library has a required `peerDependencies` listing for [`eslint`](https://eslint.org).
@@ -142,7 +143,7 @@ module.exports = {
 
 [MIT][license] &copy; [Martijn Schuijers][me]
 
-[license]: ../../LICENSE
+[license]: ./LICENSE
 [me]: https://github.com/schuijers
 [npm]: https://npmjs.org/package/@schuijers/eslint-config
 [shield-github-build-status]: https://github.com/schuijers/eslint-config/workflows/Release/badge.svg
