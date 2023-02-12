@@ -1,5 +1,14 @@
 # @schuijers/eslint-config
 
+## 1.3.1
+
+### Patch Changes
+
+- [#29](https://github.com/schuijers/eslint-config/pull/29)
+  [`e1516f4`](https://github.com/schuijers/eslint-config/commit/e1516f484e5fac882faad6ceff0f92424e1cca53)
+  Thanks [@schuijers](https://github.com/schuijers)! - Only include required `files` in
+  `package.json`
+
 ## 1.3.0
 
 ### Minor Changes
