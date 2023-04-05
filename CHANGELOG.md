@@ -1,5 +1,18 @@
 # @schuijers/eslint-config
 
+## 1.4.0
+
+### Minor Changes
+
+- [#31](https://github.com/schuijers/eslint-config/pull/31)
+  [`8fcbd91`](https://github.com/schuijers/eslint-config/commit/8fcbd914fc4fac564920b4630395c6ada82b26b2)
+  Thanks [@schuijers](https://github.com/schuijers)! - Updated dependencies
+
+- [#31](https://github.com/schuijers/eslint-config/pull/31)
+  [`8fcbd91`](https://github.com/schuijers/eslint-config/commit/8fcbd914fc4fac564920b4630395c6ada82b26b2)
+  Thanks [@schuijers](https://github.com/schuijers)! - Added rule `cypress/unsafe-to-chain-command`
+  to `cypress` config
+
 ## 1.3.1
 
 ### Patch Changes
