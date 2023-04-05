@@ -45,5 +45,11 @@ module.exports = {
      * https://github.com/cypress-io/eslint-plugin-cypress/blob/master/docs/rules/require-data-selectors.md
      */
     'cypress/require-data-selectors': 'off',
+
+    /**
+     * Prevent chaining from unsafe to chain commands.
+     * https://github.com/cypress-io/eslint-plugin-cypress/blob/master/docs/rules/unsafe-to-chain-command.md
+     */
+    'cypress/unsafe-to-chain-command': 'error',
   },
 }
